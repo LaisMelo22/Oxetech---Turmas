@@ -3,7 +3,7 @@ DROP DATABASE IF EXISTS oxetech;
 CREATE DATABASE oxetech;
 USE oxetech;
 
--- 1. Tabela Forte: CURSOS (Tem os cursos que você ministra)
+-- 1. Tabela Forte: CURSOS 
 CREATE TABLE cursos (
     id_curso INT AUTO_INCREMENT PRIMARY KEY,
     nome_curso VARCHAR(50) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE alunos (
     email VARCHAR(60) UNIQUE
 );
 
--- 3. Tabela Associativa: MATRICULAS (Onde a mágica das Chaves Estrangeiras acontece)
+-- 3. Tabela Associativa: MATRICULAS (Onde a 'mágica' das Chaves Estrangeiras acontece)
 CREATE TABLE matriculas (
     id_matricula INT AUTO_INCREMENT PRIMARY KEY,
     data_matricula DATE,
@@ -37,7 +37,7 @@ DROP DATABASE IF EXISTS oxetech;
 CREATE DATABASE oxetech;
 USE oxetech;
 
--- 1. Tabela Forte: CURSOS (Tem os cursos que você ministra)
+-- 1. Tabela Forte: CURSOS 
 CREATE TABLE cursos (
     id_curso INT AUTO_INCREMENT PRIMARY KEY,
     nome_curso VARCHAR(50) NOT NULL,
